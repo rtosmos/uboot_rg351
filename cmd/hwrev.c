@@ -25,7 +25,7 @@ int do_hwrev(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
 		env_set("dtb_kernel", "rk3326-rg351mp-linux.dtb");
 	}
 	/* RG351V */
-	else if (check_range(494, 534, hwrev_adc)) {
+	else if (1) {
 		env_set("hwrev", "rg351v");
 		env_set("dtb_uboot", "rg351v-uboot.dtb");
 		env_set("dtb_kernel", "rk3326-rg351v-linux.dtb");
